@@ -1,5 +1,5 @@
 Visit the SIGAR Wiki for documentation, bugs, support, etc.:
 http://sigar.hyperic.com/
 
-Added support maven tycho build support for Eclipse plugin and Eclipse Update Site
+Added build support for Eclipse plugin and Eclipse Update Site with Maven Tycho
 See sigar\bindings\org.fusesource.sigar.releng\README

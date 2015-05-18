@@ -1,0 +1,29 @@
+﻿Root build script here
+
+
+1. Build Sigar
+Run Sigar compilation from sigar\bindings\java
+	ant
+
+2. Manually copy folders from sigar\bindings\java to sigar\bindings\org.fusesource.sigar into subfolders:
+	* build
+	* hyperic_jni
+	* native
+	* sigar-bin
+	* src
+
+3. Build Eclipse plugin and Eclipse Update Site 
+Run plugin and update site compilation from this folder
+
+	mvn clean install
+or
+	mvn clean package
+
+Eclipse update site will be prepared in sigar\bindings\org.fusesource.sigar.repository\target\repository
+
+TODO: Add src, jar, native libs copying from sigar\bindings\java to sigar\bindings\org.fusesource.sigar into subfolders:
+	* build
+	* hyperic_jni
+	* native
+	* sigar-bin
+	* src

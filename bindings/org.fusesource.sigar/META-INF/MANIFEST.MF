@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Launcher Agent
+Bundle-SymbolicName: org.fusesource.sigar
+Bundle-Version: 1.6.4.qualifier
+Bundle-Vendor: Agentlab
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.apache.ant;bundle-version="1.9.2"
+Import-Package: org.apache.log4j;version="[1.2,2)"
+Bundle-NativeCode: sigar-bin/lib/sigar-amd64-winnt.dll; osname=win32; processor=x86_64
+Bundle-ClassPath: .,
+ hyperic_jni/lib/cpptasks.jar
+Export-Package: org.hyperic.jni,
+ org.hyperic.sigar,
+ org.hyperic.sigar.cmd,
+ org.hyperic.sigar.jmx,
+ org.hyperic.sigar.pager,
+ org.hyperic.sigar.ptql,
+ org.hyperic.sigar.shell,
+ org.hyperic.sigar.util,
+ org.hyperic.sigar.vmware,
+ org.hyperic.sigar.win32

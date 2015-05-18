@@ -1,0 +1,6 @@
+build
+sigar-bin/
+/target/
+/hyperic_jni/
+/src/
+/native/
